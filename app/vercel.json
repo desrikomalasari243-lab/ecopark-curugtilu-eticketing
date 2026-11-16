@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "public": true,
-  "routes": [
+  "builds": [
     {
-      "handle": "filesystem"
-    },
+      "src": "public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/public/index.php"
